@@ -12,8 +12,8 @@
 
 </head>
 
-<body>
-    <header class="bg-[#f7faff] ">
+<body class="space-y-6">
+    <header class="bg-[#e3edff] ">
         <section class="container mx-auto">
             <nav>
                 <div class="navbar  flex justify-between">
@@ -23,19 +23,38 @@
             </nav>
         </section>
 
-        <section>
+        <section class="pb-10">
             <div class="text-center w-3/4 mx-auto space-y-6 py-10">
                 <h1 class="text-4xl md:text-6xl font-bold">Apple Iphone 13 Pro Max</h1>
                 <p class="text-lg">There are many variations of passages of Lorem Ipsum available, but the majority have
                     suffered alteration in some form, by injected humou.</p>
                 <button class="btn bg-blue-500 text-white hover:bg-blue-600 text-xl">Buy Now</button>
             </div>
+            <div class="hidden sm:block mx-60">
+                <div class="grid gap-10  md:grid-cols-3 mx-auto ">
+                    <div class="flex items-end justify-center">
+                        <img class="w-2/3 " src="./images/singleImage.png" alt="">
+                    </div>
+                    <div>
+                        <img class="w-full" src="./images/singleImage.png" alt="">
+                    </div>
+                    <div class="flex items-end justify-center">
+                        <img class="w-2/3" src="./images/singleImage.png" alt="">
+                    </div>
+                </div>
+            </div>
 
         </section>
     </header>
 
     <main>
-
+        <div class="font-semibold space-y-5">
+            <h3 class="text-4xl text-center ">Search your phone</h3>
+            <div class="join flex items-center justify-center">
+                <input class="input input-bordered bg-gray-100  join-item w-3/5" placeholder="Search your phone" />
+                <button class="btn join-item bg-blue-500 hover:bg-blue-600 text-white rounded-r-lg">Search</button>
+            </div>
+        </div>
     </main>
 
     <footer>
