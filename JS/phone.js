@@ -9,6 +9,10 @@ const defaultPhonesLoad = async (phone, limit) => {
 function phoneDisplay(products, limit) {
     const productContainer = document.getElementById('product-container');
     console.log(products);
+    if(products.length ==0){
+        isLoading(false);
+        return;
+    }
     productContainer.innerText = "";
     if (products.length > limit && limit) {
         products = products.slice(0, 8)
