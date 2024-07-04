@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,29 @@
     <!-- DaisyUI and tailwindCSS -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
 </head>
+
 <body>
-    <header>
-<h2>Top Gadgets</h2>
+    <header class="bg-[#f7faff] ">
+        <section class="container mx-auto">
+            <nav>
+                <div class="navbar  flex justify-between">
+                    <button class="btn btn-ghost text-xl">daisyUI</button>
+                    <button class="btn bg-blue-500 text-white hover:bg-blue-600 text-xl">Sing Up</button>
+                </div>
+            </nav>
+        </section>
+
+        <section>
+            <div class="text-center w-3/4 mx-auto space-y-6 py-10">
+                <h1 class="text-4xl md:text-6xl font-bold">Apple Iphone 13 Pro Max</h1>
+                <p class="text-lg">There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form, by injected humou.</p>
+                <button class="btn bg-blue-500 text-white hover:bg-blue-600 text-xl">Buy Now</button>
+            </div>
+
+        </section>
     </header>
 
     <main>
@@ -25,4 +44,5 @@
 
     <script src="./JS/phone.js"></script>
 </body>
+
 </html>
