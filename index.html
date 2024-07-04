@@ -51,8 +51,10 @@
         <div class="font-semibold space-y-5">
             <h3 class="text-4xl text-center ">Search your phone</h3>
             <div class="join flex items-center justify-center">
-                <input id="input-field" class="input input-bordered bg-gray-100  join-item w-3/5" placeholder="Search your phone" />
-                <button id="input-search-btn" class="btn join-item bg-blue-500 hover:bg-blue-600 text-white rounded-r-lg">Search</button>
+                <input id="input-field" class="input input-bordered bg-gray-100  join-item w-3/5"
+                    placeholder="Search your phone" />
+                <button id="input-search-btn"
+                    class="btn join-item bg-blue-500 hover:bg-blue-600 text-white rounded-r-lg">Search</button>
             </div>
         </div>
 
@@ -61,10 +63,35 @@
                 <span class="loading loading-spinner loading-lg"></span>
             </div>
             <div id="product-container" class="gap-6 flex justify-evenly flex-wrap">
-                
+
             </div>
             <div class="text-center hidden" id="show-all">
-                <button onclick="defaultPhoneSeeAll()" class="btn bg-blue-500 hover:bg-blue-600 text-white">Show All</button>
+                <button onclick="defaultPhoneSeeAll()" class="btn bg-blue-500 hover:bg-blue-600 text-white">Show
+                    All</button>
+            </div>
+            <!-- Modal -->
+            <div>
+                <!-- Open the modal using ID.showModal() method -->
+                <dialog id="my_modal" class="modal modal-bottom sm:modal-middle">
+                    <div class="modal-box">
+                        <div class=" bg-base-100  ">
+                            <figure class="flex justify-center py-5 bg-blue-100">
+                                <img id="modalImage" src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                                    alt="Shoes" class="rounded-lg" />
+                            </figure>
+                            <div id="description-details" class="mt-5 space-y-4">
+                                
+                            </div>
+                        </div>
+
+                        <div class="modal-action">
+                            <form method="dialog">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn btn-error text-white">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
             </div>
         </div>
     </main>
