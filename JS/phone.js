@@ -8,7 +8,7 @@ const defaultPhonesLoad = async (phone, limit) => {
 
 function phoneDisplay(products, limit) {
     const productContainer = document.getElementById('product-container');
-    console.log(products);
+
     if(products.length ==0){
         isLoading(false);
         return;
@@ -45,7 +45,6 @@ function phoneDisplay(products, limit) {
 const defaultPhoneSeeAll = () => {
     isLoading(true);
     const inputFieldValue = document.getElementById('input-field').value;
-    console.log(inputFieldValue);
     inputFieldValue ? defaultPhonesLoad(inputFieldValue) : defaultPhonesLoad('iphone');
 }
 
